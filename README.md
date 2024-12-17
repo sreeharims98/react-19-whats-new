@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# React 19 Feature Exploration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This repository is a comprehensive exploration of the new features introduced in React 19, demonstrating practical implementations of cutting-edge React capabilities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key React 19 Features Investigated
 
-## Expanding the ESLint configuration
+### 1. React Compiler
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Implemented automatic optimization of React components
+- Explored compile-time memoization and performance improvements
+- Analyzed how the compiler reduces manual `useMemo` and `useCallback` usage
 
-- Configure the top-level `parserOptions` property like this:
+### 2. New Actions
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Demonstrated usage of new actions
+- Implemented form submissions with enhanced state management
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 3. Improved Refs
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Investigated the new ref management capabilities
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Learning Resources
+
+- [What’s new in React 19](https://react.dev/blog/2024/12/05/react-19)
+- [React Compiler Introduction](https://react.dev/learn/react-compiler)
+- [React Compiler Youtube video 1](https://www.youtube.com/watch?v=bdWUVp0TbTU)
+- [React Compiler Youtube video 2](https://www.youtube.com/watch?v=PYHBHK37xlE)
